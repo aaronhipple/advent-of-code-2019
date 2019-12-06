@@ -2,4 +2,4 @@ input ← 141589 93261 104320 81961 99212 80661 78734 76783 148694 114382 141508
 fuel ← {(⌊(⍵ ÷ 3)) - 2}
 sum ← +/
 
-sum fuel 
+sum fuel input ⍝ Solution Part 1
