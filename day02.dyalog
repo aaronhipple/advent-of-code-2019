@@ -15,6 +15,10 @@ run←{
   99=(⍺⌷⍵): ⍵
 }
 
-tweak←{ noun←1⌷⍺ ⋄ verb←2⌷⍺ ⋄ (1↑⍵), noun, verb, (3↓⍵) }
+tweak←{
+  noun←1⌷⍺
+  verb←2⌷⍺
+  (1↑⍵), noun, verb, (3↓⍵)
+}
 
 1 run (12 2 tweakedInput) ⍝ Solution Part 1
