@@ -6,7 +6,7 @@ op←{
   r←⍵[1+((⍺+2)⌷⍵)]
   addr←1+⍵[⍺+3]
   result←q ⍺⍺ r
-  ((addr-1)↑⍵) , result , (addr↓⍵)
+  (result@addr) ⍵
 }
 
 run←{
@@ -22,3 +22,5 @@ tweak←{
 }
 
 1 run (12 2 tweakedInput) ⍝ Solution Part 1
+
+expected←19690720
